@@ -1,3 +1,6 @@
+
+'use strict';
+
 class UserStorage {
 
 	loginUser(id, password, onSuccess, onError) {
@@ -12,7 +15,7 @@ class UserStorage {
             }
 		}, 2000);
 	}
-
+        
 	getRoles(user, onSuccess, onError) {
 		setTimeout(() => {
             if (user === 'sky') {
@@ -22,9 +25,9 @@ class UserStorage {
             }
         }, 1000);
 	}
-
+    
 }
-
+                
 const userStorage = new UserStorage();
 const id = prompt('enter your id');
 const pw = prompt('enter your password');
