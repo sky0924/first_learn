@@ -18,12 +18,12 @@
         - SEO issue : 검색엔진 최적화 문제 (클라이언트 렌더링 방식)
         → 정보 제공을 위한 웹페이지보다는 애플리케이션에 적합하기 때문에 심각한 issue는 아님
         - URL이 변경되지 않아 history 관리 불가 ← SEO issue의 원인
-    - 다른 방식과의 차이점? 🤔
+    - 다른 방식과의 차이점?
         
-        [20210915](https://www.notion.so/20210915-9ac7af583d1347c79353676c86cb3629)  **페이지 렌더링 방식**
+        [20210915](https://www.notion.so/20210915-9ac7af583d1347c79353676c86cb3629)  페이지 렌더링 방식
         
-        - 기존 : ??
-        - 현재 : ??
+        - 다른 개념이다!
+        - SPA는 CSR 방식!
     
 2. class, object, instance
     - Class
@@ -66,10 +66,11 @@
     - 괄호 안에 들어가는 값은 어떤 의미?
         - symbol에 대한 설명, 디버깅에 사용
         - symbol에 접근하는 용도 X
-    - **symbol.length**? 🤔
+    - Symbol.length?
         
         [Symbol - JavaScript | MDN](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Symbol)
         
+        - 타입 자체의 length → 0
     
 4. 05 Rest Parameters (가변 인자)
     
@@ -78,10 +79,6 @@
     - 매개변수의 최대 갯수가 지정되지 않음
     - Last Parameter 앞에 ...을 붙여 정의
     `ex) function a(...args) {}`
-    - **arguments 객체와 차이점**..? 🤔
-        
-        [Rest 파라미터 - JavaScript | MDN](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Functions/rest_parameters)
-        
     
 5. 05 10 11 callback 정확히?
     
@@ -91,13 +88,11 @@
     
     - 다른 함수의 인자로 이용되는 함수
     - 어떤 이벤트에 의해 호출되는 함수
-    - **예시**? 🤔
-    - 함수 안에서 호출되면 callback 함수?
     
 6. 05 함수를 변수에 저장하는 이유?
-`ex) const a = function b () {};`
-    - 외부에서 호출할 수 없게?
-    - 일회용?
+`ex) const a = function () {};`
+    - 외부에서 호출할 수 없게, 일회용 → 익명 함수
+    - 하나의 선언 방법이다!
     
 7. 05 Recursions (재귀)
     - 정의할 때 자신을 참조, 호출
@@ -105,9 +100,9 @@
     - 가독성이 좋음
     - 메모리 많이 차지 → 반복문에 비해 성능 낮음
     
-    ![2.png](2.png)
+    ![Untitled](2.png)
     
-    - **꼬리 재귀**? 🤔
+    - 꼬리 재귀?
         - 재귀 함수의 메모리와 성능 문제 해결
         - 컴파일러가 최적화 → 반복문으로 변경
         - 일반 재귀 : 재귀 호출 이후 추가 연산 필요
@@ -132,14 +127,14 @@
         - `this.var = value` → set(value) 호출
         → setter 무한 루프 😰 → 변수명 앞에 _를 붙여 구분
         
-        ![1.png](1.png)
+        ![스크린샷](1.png)
         
     
 9. 07 Property Value Shorthand vs Constructor Function, Class와 어떤 상관관계?
     
     [07 Object란?](https://www.notion.so/07-Object-04852b93cab14d63b887e9cd9e61a511) 
     
-    - 
+    - 같은데 다르다!
     
 10. 07 Cloning
     
@@ -154,24 +149,30 @@
     
     [08 Array의 개념](https://www.notion.so/08-Array-5f921ce8aa4546f48d8f8b8ac0949728) 
     
+    [Array Functions](https://www.notion.so/Array-Functions-fefd69f616514007b92e4a6aa2680657) 
+    
     - Array 객체에서만 사용하는 메서드
     - callback 함수 → 파라미터
     - 배열의 각 요소들이 반복될 때마다 callback 함수 호출
-    - command + click → **api 설명 해석하는 방법**? 🤔 **<>는 무엇**? 🤔
+    - command + click
+    - <STU>는 무엇?
+        - return
+        - generic type
     
 12. 08 - 09 실습
     
     [09 유용한 10가지 Array Functions](https://www.notion.so/09-10-Array-Functions-7c17f7bee7d048a885951aed227671d2) 
     
-    [Array Functions](https://www.notion.so/Array-Functions-fefd69f616514007b92e4a6aa2680657)
-    
-13. 12 promise 개념.. <- callback 먼저 이해해야할듯
-    
-    [12 Promise의 개념과 활용](https://www.notion.so/12-Promise-ae61454d56c04bd389559a9019a91fc1) 
-    
-14. return은 어떤 상황에 필요?
-    - 함수 실행 종료
+13. return은 어떤 상황에 필요
+    - 함수 실행 종료!
     → return이 없다면 종료가 안될까?
     - 결과값을 반환
     → return이 없다면 반환이 안될까?
-    - void의 쓰임
+    
+14. 12 promise 개념
+    
+    [12 Promise의 개념과 활용](https://www.notion.so/12-Promise-ae61454d56c04bd389559a9019a91fc1) 
+    
+15. 13 async와 await
+    
+    [13 JavaScript async와 await, 유용한 Promise APIs](https://www.notion.so/13-JavaScript-async-await-Promise-APIs-b13f78e13c4f438e8b5e41160c93ac69)
